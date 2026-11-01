@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "targets": {
     "net10.0": {
       "Castle.Core/5.2.1": {
@@ -684,7 +684,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
-          "Abstracciones": "1.0.0"
+          "Abstracciones": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.0"
         },
         "compile": {
           "bin/placeholder/Flujo.dll": {}
@@ -1683,24 +1684,31 @@
     ]
   },
   "packageFolders": {
-    "/home/mamalona/.nuget/packages/": {}
+    "C:\\Users\\werne\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/mamalona/RiderProjects/GestorEventos/Pruebas/Pruebas.csproj",
+      "projectUniqueName": "C:\\Users\\werne\\Desktop\\caso_segunda_parte_Progra_Avanzada_grupo-3\\Pruebas\\Pruebas.csproj",
       "projectName": "Pruebas",
-      "projectPath": "/home/mamalona/RiderProjects/GestorEventos/Pruebas/Pruebas.csproj",
-      "packagesPath": "/home/mamalona/.nuget/packages/",
-      "outputPath": "/home/mamalona/RiderProjects/GestorEventos/Pruebas/obj/",
+      "projectPath": "C:\\Users\\werne\\Desktop\\caso_segunda_parte_Progra_Avanzada_grupo-3\\Pruebas\\Pruebas.csproj",
+      "packagesPath": "C:\\Users\\werne\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\werne\\Desktop\\caso_segunda_parte_Progra_Avanzada_grupo-3\\Pruebas\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/home/mamalona/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\werne\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -1708,11 +1716,11 @@
           "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {
-            "/home/mamalona/RiderProjects/GestorEventos/Abstracciones/Abstracciones.csproj": {
-              "projectPath": "/home/mamalona/RiderProjects/GestorEventos/Abstracciones/Abstracciones.csproj"
+            "C:\\Users\\werne\\Desktop\\caso_segunda_parte_Progra_Avanzada_grupo-3\\Abstracciones\\Abstracciones.csproj": {
+              "projectPath": "C:\\Users\\werne\\Desktop\\caso_segunda_parte_Progra_Avanzada_grupo-3\\Abstracciones\\Abstracciones.csproj"
             },
-            "/home/mamalona/RiderProjects/GestorEventos/Flujo/Flujo.csproj": {
-              "projectPath": "/home/mamalona/RiderProjects/GestorEventos/Flujo/Flujo.csproj"
+            "C:\\Users\\werne\\Desktop\\caso_segunda_parte_Progra_Avanzada_grupo-3\\Flujo\\Flujo.csproj": {
+              "projectPath": "C:\\Users\\werne\\Desktop\\caso_segunda_parte_Progra_Avanzada_grupo-3\\Flujo\\Flujo.csproj"
             }
           }
         }
@@ -1727,7 +1735,7 @@
         "auditLevel": "low",
         "auditMode": "all"
       },
-      "SdkAnalysisLevel": "10.0.100"
+      "SdkAnalysisLevel": "10.0.300"
     },
     "frameworks": {
       "net10.0": {
@@ -1779,7 +1787,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/10.0.113/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.300/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",
