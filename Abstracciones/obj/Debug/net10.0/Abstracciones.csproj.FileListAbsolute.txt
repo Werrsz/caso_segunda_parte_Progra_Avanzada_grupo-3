@@ -1,0 +1,11 @@
+/home/mamalona/RiderProjects/GestorEventos/Abstracciones/bin/Debug/net10.0/Abstracciones.deps.json
+/home/mamalona/RiderProjects/GestorEventos/Abstracciones/bin/Debug/net10.0/Abstracciones.dll
+/home/mamalona/RiderProjects/GestorEventos/Abstracciones/bin/Debug/net10.0/Abstracciones.pdb
+/home/mamalona/RiderProjects/GestorEventos/Abstracciones/obj/Debug/net10.0/Abstracciones.GeneratedMSBuildEditorConfig.editorconfig
+/home/mamalona/RiderProjects/GestorEventos/Abstracciones/obj/Debug/net10.0/Abstracciones.AssemblyInfoInputs.cache
+/home/mamalona/RiderProjects/GestorEventos/Abstracciones/obj/Debug/net10.0/Abstracciones.AssemblyInfo.cs
+/home/mamalona/RiderProjects/GestorEventos/Abstracciones/obj/Debug/net10.0/Abstracciones.csproj.CoreCompileInputs.cache
+/home/mamalona/RiderProjects/GestorEventos/Abstracciones/obj/Debug/net10.0/Abstracciones.dll
+/home/mamalona/RiderProjects/GestorEventos/Abstracciones/obj/Debug/net10.0/refint/Abstracciones.dll
+/home/mamalona/RiderProjects/GestorEventos/Abstracciones/obj/Debug/net10.0/Abstracciones.pdb
+/home/mamalona/RiderProjects/GestorEventos/Abstracciones/obj/Debug/net10.0/ref/Abstracciones.dll

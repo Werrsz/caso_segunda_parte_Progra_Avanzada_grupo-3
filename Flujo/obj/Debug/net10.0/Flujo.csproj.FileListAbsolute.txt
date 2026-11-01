@@ -1,0 +1,15 @@
+/home/mamalona/RiderProjects/GestorEventos/Flujo/bin/Debug/net10.0/Flujo.deps.json
+/home/mamalona/RiderProjects/GestorEventos/Flujo/bin/Debug/net10.0/Flujo.dll
+/home/mamalona/RiderProjects/GestorEventos/Flujo/bin/Debug/net10.0/Flujo.pdb
+/home/mamalona/RiderProjects/GestorEventos/Flujo/bin/Debug/net10.0/Abstracciones.dll
+/home/mamalona/RiderProjects/GestorEventos/Flujo/bin/Debug/net10.0/Abstracciones.pdb
+/home/mamalona/RiderProjects/GestorEventos/Flujo/obj/Debug/net10.0/Flujo.csproj.AssemblyReference.cache
+/home/mamalona/RiderProjects/GestorEventos/Flujo/obj/Debug/net10.0/Flujo.GeneratedMSBuildEditorConfig.editorconfig
+/home/mamalona/RiderProjects/GestorEventos/Flujo/obj/Debug/net10.0/Flujo.AssemblyInfoInputs.cache
+/home/mamalona/RiderProjects/GestorEventos/Flujo/obj/Debug/net10.0/Flujo.AssemblyInfo.cs
+/home/mamalona/RiderProjects/GestorEventos/Flujo/obj/Debug/net10.0/Flujo.csproj.CoreCompileInputs.cache
+/home/mamalona/RiderProjects/GestorEventos/Flujo/obj/Debug/net10.0/Flujo.csproj.Up2Date
+/home/mamalona/RiderProjects/GestorEventos/Flujo/obj/Debug/net10.0/Flujo.dll
+/home/mamalona/RiderProjects/GestorEventos/Flujo/obj/Debug/net10.0/refint/Flujo.dll
+/home/mamalona/RiderProjects/GestorEventos/Flujo/obj/Debug/net10.0/Flujo.pdb
+/home/mamalona/RiderProjects/GestorEventos/Flujo/obj/Debug/net10.0/ref/Flujo.dll

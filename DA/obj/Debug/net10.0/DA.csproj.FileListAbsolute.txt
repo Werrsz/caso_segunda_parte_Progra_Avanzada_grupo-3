@@ -1,0 +1,17 @@
+/home/mamalona/RiderProjects/GestorEventos/DA/bin/Debug/net10.0/DA.deps.json
+/home/mamalona/RiderProjects/GestorEventos/DA/bin/Debug/net10.0/DA.dll
+/home/mamalona/RiderProjects/GestorEventos/DA/bin/Debug/net10.0/DA.pdb
+/home/mamalona/RiderProjects/GestorEventos/DA/bin/Debug/net10.0/Abstracciones.dll
+/home/mamalona/RiderProjects/GestorEventos/DA/bin/Debug/net10.0/Abstracciones.pdb
+/home/mamalona/RiderProjects/GestorEventos/DA/obj/Debug/net10.0/DA.csproj.AssemblyReference.cache
+/home/mamalona/RiderProjects/GestorEventos/DA/obj/Debug/net10.0/DA.GeneratedMSBuildEditorConfig.editorconfig
+/home/mamalona/RiderProjects/GestorEventos/DA/obj/Debug/net10.0/DA.AssemblyInfoInputs.cache
+/home/mamalona/RiderProjects/GestorEventos/DA/obj/Debug/net10.0/DA.AssemblyInfo.cs
+/home/mamalona/RiderProjects/GestorEventos/DA/obj/Debug/net10.0/DA.csproj.CoreCompileInputs.cache
+/home/mamalona/RiderProjects/GestorEventos/DA/obj/Debug/net10.0/DA.csproj.Up2Date
+/home/mamalona/RiderProjects/GestorEventos/DA/obj/Debug/net10.0/DA.dll
+/home/mamalona/RiderProjects/GestorEventos/DA/obj/Debug/net10.0/refint/DA.dll
+/home/mamalona/RiderProjects/GestorEventos/DA/obj/Debug/net10.0/DA.pdb
+/home/mamalona/RiderProjects/GestorEventos/DA/obj/Debug/net10.0/ref/DA.dll
+/home/mamalona/RiderProjects/GestorEventos/DA/bin/Debug/net10.0/DA.runtimeconfig.json
+/home/mamalona/RiderProjects/GestorEventos/DA/obj/Debug/net10.0/DA.genruntimeconfig.cache
