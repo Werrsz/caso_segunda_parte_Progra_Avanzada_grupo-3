@@ -1,4 +1,5 @@
 ﻿namespace Abstracciones.Conferencistas;
+using Abstracciones.Eventos;
 
 public class Conferencista
 {
@@ -8,4 +9,6 @@ public class Conferencista
     public string Especialidad { get; set; } = string.Empty;
     public string? Biografia { get; set; }
     public DateTime FechaRegistro { get; set; }
+
+    public List<Evento> Eventos { get; set; } = new();
 }

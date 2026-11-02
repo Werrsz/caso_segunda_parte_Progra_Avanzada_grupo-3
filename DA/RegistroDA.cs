@@ -3,7 +3,8 @@ using DA.Conferencistas;
 using DA.Contexto;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-
+using Abstracciones.Eventos;
+using DA.Eventos;
 namespace DA;
 
 public static class RegistroDA
@@ -14,6 +15,8 @@ public static class RegistroDA
 
         // Módulo Conferencistas
         servicios.AddScoped<IConferencistaDA, ConferencistaDA>();
+        // Módulo Eventos
+        servicios.AddScoped<IEventoDA, EventoDA>();
 
         return servicios;
     }
