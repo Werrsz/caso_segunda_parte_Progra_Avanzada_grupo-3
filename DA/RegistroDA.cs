@@ -1,10 +1,15 @@
-﻿using Abstracciones.Conferencistas;
+using Abstracciones.Asistentes;
+using Abstracciones.Conferencistas;
+using Abstracciones.Eventos;
+using Abstracciones.Inscripciones;
+using DA.Asistentes;
 using DA.Conferencistas;
 using DA.Contexto;
+using DA.Eventos;
+using DA.Inscripciones;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using Abstracciones.Eventos;
-using DA.Eventos;
+
 namespace DA;
 
 public static class RegistroDA
@@ -17,6 +22,10 @@ public static class RegistroDA
         servicios.AddScoped<IConferencistaDA, ConferencistaDA>();
         // Módulo Eventos
         servicios.AddScoped<IEventoDA, EventoDA>();
+        // Módulo Asistentes
+        servicios.AddScoped<IAsistenteDA, AsistenteDA>();
+        // Módulo Inscripciones (Muchos a Muchos)
+        servicios.AddScoped<IInscripcionDA, InscripcionDA>();
 
         return servicios;
     }

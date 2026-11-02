@@ -1,8 +1,12 @@
+using Abstracciones.Asistentes;
 using Abstracciones.Conferencistas;
-using Flujo.Conferencistas;
-using Microsoft.Extensions.DependencyInjection;
 using Abstracciones.Eventos;
+using Abstracciones.Inscripciones;
+using Flujo.Asistentes;
+using Flujo.Conferencistas;
 using Flujo.Eventos;
+using Flujo.Inscripciones;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace Flujo;
 
@@ -14,8 +18,9 @@ public static class RegistroFlujo
         servicios.AddSingleton(TimeProvider.System);
 
         servicios.AddScoped<IConferencistaFlujo, ConferencistaFlujo>();
-        
         servicios.AddScoped<IEventoFlujo, EventoFlujo>();
+        servicios.AddScoped<IAsistenteFlujo, AsistenteFlujo>();
+        servicios.AddScoped<IInscripcionFlujo, InscripcionFlujo>();
 
         return servicios;
     }

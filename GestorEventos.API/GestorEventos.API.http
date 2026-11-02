@@ -1,6 +1,82 @@
 @GestorEventos.API_HostAddress = http://localhost:5054
 
-GET {{GestorEventos.API_HostAddress}}/weatherforecast/
+### Conferencistas - Listar
+GET {{GestorEventos.API_HostAddress}}/api/conferencistas
 Accept: application/json
 
-###
+### Conferencistas - Crear
+POST {{GestorEventos.API_HostAddress}}/api/conferencistas
+Content-Type: application/json
+
+{
+  "nombre": "Dr. Alan Turing",
+  "correo": "alan.turing@example.com",
+  "especialidad": "Inteligencia Artificial",
+  "biografia": "Pionero en ciencias de la computación."
+}
+
+### Eventos - Listar
+GET {{GestorEventos.API_HostAddress}}/api/eventos
+Accept: application/json
+
+### Eventos - Crear
+POST {{GestorEventos.API_HostAddress}}/api/eventos
+Content-Type: application/json
+
+{
+  "titulo": "Congreso de IA y Futuro",
+  "descripcion": "Explorando avances modernos en redes neuronales.",
+  "lugar": "Auditorio Principal A-101",
+  "fechaInicio": "2026-12-01T09:00:00Z",
+  "fechaFin": "2026-12-01T12:00:00Z",
+  "cupoMaximo": 50,
+  "conferencistaId": 1
+}
+
+### Asistentes - Listar
+GET {{GestorEventos.API_HostAddress}}/api/asistentes
+Accept: application/json
+
+### Asistentes - Crear
+POST {{GestorEventos.API_HostAddress}}/api/asistentes
+Content-Type: application/json
+
+{
+  "nombre": "Ada Lovelace",
+  "correo": "ada.lovelace@example.com"
+}
+
+### Asistentes - Obtener por Id
+GET {{GestorEventos.API_HostAddress}}/api/asistentes/1
+Accept: application/json
+
+### Asistentes - Eliminar
+DELETE {{GestorEventos.API_HostAddress}}/api/asistentes/1
+
+### Inscripciones (Muchos a Muchos) - Listar todas
+GET {{GestorEventos.API_HostAddress}}/api/inscripciones
+Accept: application/json
+
+### Inscripciones - Filtrar por Evento (Asistentes de un Evento)
+GET {{GestorEventos.API_HostAddress}}/api/inscripciones?eventoId=1
+Accept: application/json
+
+### Inscripciones - Filtrar por Asistente (Eventos de un Asistente)
+GET {{GestorEventos.API_HostAddress}}/api/inscripciones?asistenteId=1
+Accept: application/json
+
+### Inscripciones - Crear (Inscribir asistente en evento)
+POST {{GestorEventos.API_HostAddress}}/api/inscripciones
+Content-Type: application/json
+
+{
+  "eventoId": 1,
+  "asistenteId": 1
+}
+
+### Inscripciones - Obtener por Id
+GET {{GestorEventos.API_HostAddress}}/api/inscripciones/1
+Accept: application/json
+
+### Inscripciones - Cancelar / Eliminar
+DELETE {{GestorEventos.API_HostAddress}}/api/inscripciones/1

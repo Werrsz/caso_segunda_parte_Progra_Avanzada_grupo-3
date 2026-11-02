@@ -1,6 +1,8 @@
+using Abstracciones.Asistentes;
 using Abstracciones.Conferencistas;
-using Microsoft.EntityFrameworkCore;
 using Abstracciones.Eventos;
+using Abstracciones.Inscripciones;
+using Microsoft.EntityFrameworkCore;
 
 namespace DA.Contexto;
 
@@ -11,6 +13,10 @@ public class EventosContexto : DbContext
     public DbSet<Conferencista> Conferencistas => Set<Conferencista>();
 
     public DbSet<Evento> Eventos => Set<Evento>();
+
+    public DbSet<Asistente> Asistentes => Set<Asistente>();
+
+    public DbSet<Inscripcion> Inscripciones => Set<Inscripcion>();
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
