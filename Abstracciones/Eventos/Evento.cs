@@ -1,4 +1,5 @@
 using Abstracciones.Conferencistas;
+using Abstracciones.Inscripciones;
 
 namespace Abstracciones.Eventos;
 
@@ -19,4 +20,7 @@ public class Evento
 
     // Navegación N-1
     public Conferencista? Conferencista { get; set; }
+
+    // Navegación 1-N con Inscripciones (Muchos a Muchos con Asistentes)
+    public List<Inscripcion> Inscripciones { get; set; } = new();
 }

@@ -22,6 +22,37 @@ namespace DA.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("Abstracciones.Asistentes.Asistente", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Correo")
+                        .IsRequired()
+                        .HasMaxLength(150)
+                        .HasColumnType("nvarchar(150)");
+
+                    b.Property<DateTime>("FechaRegistro")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2")
+                        .HasDefaultValueSql("SYSUTCDATETIME()");
+
+                    b.Property<string>("Nombre")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Correo")
+                        .IsUnique();
+
+                    b.ToTable("Asistentes", (string)null);
+                });
+
             modelBuilder.Entity("Abstracciones.Conferencistas.Conferencista", b =>
                 {
                     b.Property<int>("Id")
@@ -117,6 +148,37 @@ namespace DA.Migrations
                     b.ToTable("Eventos", (string)null);
                 });
 
+            modelBuilder.Entity("Abstracciones.Inscripciones.Inscripcion", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("AsistenteId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("EventoId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("FechaInscripcion")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2")
+                        .HasDefaultValueSql("SYSUTCDATETIME()");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AsistenteId");
+
+                    b.HasIndex("EventoId");
+
+                    b.HasIndex("EventoId", "AsistenteId")
+                        .IsUnique();
+
+                    b.ToTable("Inscripciones", (string)null);
+                });
+
             modelBuilder.Entity("Abstracciones.Eventos.Evento", b =>
                 {
                     b.HasOne("Abstracciones.Conferencistas.Conferencista", "Conferencista")
@@ -128,9 +190,38 @@ namespace DA.Migrations
                     b.Navigation("Conferencista");
                 });
 
+            modelBuilder.Entity("Abstracciones.Inscripciones.Inscripcion", b =>
+                {
+                    b.HasOne("Abstracciones.Asistentes.Asistente", "Asistente")
+                        .WithMany("Inscripciones")
+                        .HasForeignKey("AsistenteId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("Abstracciones.Eventos.Evento", "Evento")
+                        .WithMany("Inscripciones")
+                        .HasForeignKey("EventoId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Asistente");
+
+                    b.Navigation("Evento");
+                });
+
+            modelBuilder.Entity("Abstracciones.Asistentes.Asistente", b =>
+                {
+                    b.Navigation("Inscripciones");
+                });
+
             modelBuilder.Entity("Abstracciones.Conferencistas.Conferencista", b =>
                 {
                     b.Navigation("Eventos");
+                });
+
+            modelBuilder.Entity("Abstracciones.Eventos.Evento", b =>
+                {
+                    b.Navigation("Inscripciones");
                 });
 #pragma warning restore 612, 618
         }
